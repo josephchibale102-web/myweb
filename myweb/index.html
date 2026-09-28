@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to the World of Web Programming</h1>
+        <p>Joseph Chibale 202511697</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#hobbies">Hobbies</a> |
+        <a href="#learning>">Learning Plan</a> |
+        <a href="#photos">Photos</a> |
+        <a href="#media">Media</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>My name is Joseph Chibale(PhD), Student ID 202511697, and I am a student at Mulungushi University Persuing Bachelor's Degree in Computer Science. I am currently learning Introduction to Web Technologies and this is my first HTML document.I am passionate about technology and My goal is to become a skilled web developer who can create useful and interesting personal websites. I am very hardworking and eager to learn new skills every day</p>
+        </section>
+
+        <section id="hobbies" class="content-section">
+            <h2>My hobbies</h2>
+            <ul>
+                <li>I like playing football</li>
+                <li>I like reading bible</li>
+                <li>I like watching series</li>
+            </ul>
+        </section>
+
+        <section id="learning" class="content-section">
+            <h2>My learning Plan</h2>
+            <table>
+                <caption>My Weekly Web Learning</caption>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Practice Task</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML Basics</td>
+                    <td>Create structure of homepage</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>CSS Styling</td>
+                    <td>Style header and gallery</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Images & Links</td>
+                    <td>Add photo with relative paths</td>
+                </tr>
+            </table>
+            <ol>
+                <li>Practice HTML and CSS for 1 hour every day after classes</li>
+                <li>Watch tutorials on YouTube and build small projects like a portforlio</li>
+                <li>Join coding groups at Mulungushi University and ask for a feedback on my code</li>
+                <li>Learn Javascript to make my first personal website ineractive</li>
+            </ol> 
+        </section>
+
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+            <figure>
+                <img src="images/photo1.jpg" alt="My unexpected photo" width="300">
+                <figcaption>This is one of my favorite photos</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo2.jpg" alt="Photo of me at the Home" width="300">
+                <figcaption>About to go the Congregation Meeting</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo3.jpg" alt="One of my happiest moments" width="300">
+                <figcaption>On my way going to the Field Ministry</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo4.jpg" alt="Just a normal picture after Covention" width="300">
+                <figcaption>From the Circuit Assembly</figcaption>
+            </figure>
+        </section>
+
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+            <p>My favorite video:</p>
+
+            <figure>
+                    <video controls width="400" aria-describedby="video-transcript">
+                    <source src="videos/video1.mp4" type="video/mp4">
+                </video>
+                <figcaption>A short Introduction video about me</figcaption>
+            </figure>
+
+            <div id="video-transcript">
+                <h3>Video Summary / Transcript:</h3>
+                <p>
+                    Hello, My name is Joseph Chibale. In this video I introduce myself as a second year student at Mulungushi University, I am Persuinga Bachelor's Degree in Computer Science.I want to tell you about my web skills which are frontend, backend and full-stack that will help me to build perfect website.
+                    #This text provides the same information as spoken in the video, especially for users who cannot hear the audio.
+                </p>
+            </div>
+
+            <p>My favorite Audios:</p>
+            <figure>
+                <audio src="videos/audio1.mp3" controls></audio>
+                <figcaption>Audio 1 - My Personal Introduction. In this audio I talked about my name, my background and why I chose my program.</figcaption>
+            </figure>
+
+            <figure>
+                <audio src="videos/audio2.mp3" controls></audio>
+                <figcaption>Audio 2 - My Hobbies. This recording explains my favorite hobbies and what I do in my free time while looking forward to have good grades in my all courses.</figcaption>
+            </figure>
+            
+            <figure>
+                <audio src="videos/audio3.mp3" controls></audio>
+                <figcaption>Audio 3 - My Academic Goals. This audio describes my career goals after graduating from Mulungushi University.</figcaption>
+            </figure>
+            
+            <figure>
+                <audio src="videos/audio4.mp3" controls></audio>
+                <figcaption>Audio 4 - A motivational message about hard work and education.</figcaption>
+            </figure>
+            
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+            <p>Email: josephchibale102@gmail.com</p>
+            <p>Phone: +260770020346</p>
+            <p>Loacation: Mulungushi University</p>
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="topic">Topic:</label><br>
+                    <select id="topic" name="topic">
+                        <option
+                        value="question">Question</option>
+                        <option
+                        value="feedback">Feedback</option>
+                        <option
+                        value="collaboration">Collaboration</option>
+                    </select>    
+                </p>
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+                </p>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Joseph Chibale(PhD) - My First Web Page</p>
+    </footer>
+    
+</body>
+</html>    

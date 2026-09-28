@@ -1,0 +1,292 @@
+/* ========== Main variables - my color palette ========== */
+:root {
+    --bg: #177b49;    
+    --text: #15386f;   
+    --primary: #15386f;     
+    --accent: #ff1493;    
+    --card: #177b49;    
+}
+/* ========== Readable fonts and comfortable reading ========== */
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;    
+    font-size: 16px;   
+    line-height: 1.7;    
+    color: var(--text);
+    background-color: var(--bg);
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== HEADER ========== */
+header {
+    background-color: var(--primary);
+    color: var(--accent);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 18px;
+    color: #ddd6fe;
+    margin-top: 8px;
+}
+
+/* ========== NAVIGATION ========== */
+nav {
+    background-color: var(--accent);
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 2x 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+}
+nav a {
+    color: var(--primary);
+    text-decoration: none;
+    margin: 0 15x;
+    font-weight: 600;
+}
+nav a:hover {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+}
+
+/*========== MAIN SECTIONS ==========*/
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+section {
+    background: var(--accent);
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 10px;
+}
+h2 {
+    color: var(--primary);
+    border-left: 5px solid var(--accent);
+    padding-left: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* ========== PHOTO GALLERY ========== */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 15px;
+}
+.gallery figure {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background: var(--card);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0;
+    text-align: center;
+}
+.gallery img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 6px;
+    height: auto;
+}
+figcaption {
+    color: var(--primary);
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* ========== MEDIA PLAYERS ========== */
+audio {
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+    display: block;
+    margin: 10px auto;
+    background: whitesmoke;
+    border-radius: 20px;
+    border: 2px solid var(--primary);
+}
+.video-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+video {
+    width: 50%;
+    max-width: 250px;
+    height: auto;
+}
+
+/* ========== TABLE ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px;
+}
+th {
+    background: var(--primary);
+    color: var(--bg);
+    padding: 10px;
+    text-align: left;
+}
+td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--card);
+}
+tr:nth-child(even) {
+    background-color: var(--card);
+}
+
+/* ========== FORM ========== */
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #d8b4fe;
+    border-radius: 6px;
+    font-size: 16px;
+}
+form button {
+    background: var(--primary);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+form button:hover {
+    background: var(--accent);
+}
+/* ========== BOX MODEL ========== */
+#about {
+    padding: 40px;
+    border: 5px solid #ff1493;
+    margin: 50px 20px;
+    background-color: #177b49;
+    border-radius: 0;
+}
+/* ========== Element selector ========== */
+section {
+    background: var(--accent);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+/* ========== Class selector ========== */
+.card-selection {
+    background-color: var(--card);
+    border-left: 6px solid var(--accent);
+    padding: 25px;
+    margin: 25px 0;
+}
+/* ========== Id selector ========== */
+#unique-intro {
+    border: 5px solid #ff1493;
+    padding: 40px;
+    margin: 50px 20px;
+    text-align: center;
+}
+/* ========== Links ========== */
+a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+a:hover {
+    color: #15386f;
+    background-color: var(--bg);
+    text-decoration: underline;
+}
+a:focus {
+    outline: 3px solid #ff1493;
+    background-color: #177b49;
+    color: var(--primary);
+}
+nav a {
+    background: var(--bg);
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+}
+nav a:hover {
+    background: var(--accent);
+    transform: scale(1.1);
+}
+/* ========== Submit button ========== */
+button[type="submit"],
+input[type="submit"] {
+    background: var(--primary);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+    background: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+button[type="submit"]:focus,
+input[type="submit"]:focus {
+    outline: 4px solid #ff1493;
+    outline-offset: 2px;
+    background: var(--accent);
+}
+button[type="submit"]:active {
+    transform: scale(0.95);
+}
+/* ========= Check Narrow Width Mobile ========== */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        padding: 15px 10px;
+    }
+    .gallery figure {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+.content-section { padding: 1rem;
+margin: 1rem 0; border: 1px solid #456;}
+#hobbies { background-color: #177b49;}
+img {max-width: 100%; height: auto;}
